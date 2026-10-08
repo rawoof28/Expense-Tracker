@@ -1,0 +1,307 @@
+/* Background */
+
+body {
+  background: #f4f7fc;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Main Layout */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ================= Sidebar ================= */
+
+.sidebar {
+ width: 250px;
+  min-height: 100vh;
+  background: #1e293b;
+  color: white;
+  padding: 25px 20px;
+
+  display: flex;
+  flex-direction: column;
+   position: fixed;
+  width: 250px;
+}
+
+.logo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+
+.sidebar .menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  font-weight: 500;
+}
+.main-content {
+  margin-left: 250px;
+  padding: 30px;
+}
+.sidebar .menu:hover {
+  background: #334155;
+  color: white;
+}
+
+.sidebar .menu.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Logout button */
+
+.sidebar .btn {
+  margin-top: auto;
+  border-radius: 10px;
+}
+
+/* ================= Main ================= */
+
+.main-content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 35px;
+}
+
+/* ================= Header ================= */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar h2 {
+  font-weight: bold;
+}
+
+.topbar p {
+  color: gray;
+  margin: 0;
+}
+
+/* ================= Cards ================= */
+
+.stats-card {
+  border-radius: 18px;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+}
+
+.revenue {
+  background: linear-gradient(135deg,#2563eb,#3b82f6);
+}
+
+.spent {
+  background: linear-gradient(135deg,#ef4444,#f87171);
+}
+
+.remain {
+  background: linear-gradient(135deg,#10b981,#34d399);
+}
+
+.stats-card h6 {
+  font-size: 17px;
+}
+
+.stats-card h2 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ================= Card ================= */
+
+.card {
+  border: none;
+  border-radius: 18px;
+}
+
+/* ================= Month Title ================= */
+
+.month-title {
+  color: #2563eb;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* ================= Table ================= */
+
+.table {
+  margin-top: 10px;
+}
+
+.table thead {
+  background: #2563eb;
+  color: white;
+}
+
+.table th {
+  border: none;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.table tbody tr:hover {
+  background: #eef4ff;
+}
+
+/* ================= Buttons ================= */
+
+.btn-danger {
+  border-radius: 8px;
+}
+
+.btn-primary {
+  border-radius: 8px;
+}
+.allowance-box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.allowance-view,
+.allowance-edit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.allowance-box input {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.allowance-box button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #4f46e5;
+  color: white;
+}
+.progress-box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4f46e5;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #666;
+}
+.warning-box {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.warning {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #f59e0b;
+}
+
+.danger {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+/* ================= Footer ================= */
+
+.footer {
+  text-align: center;
+  color: gray;
+  margin-top: 40px;
+}
+
+/* Remove arrows from number inputs */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:768px){
+
+.sidebar{
+
+width:100%;
+
+height:auto;
+
+position:relative;
+
+}
+
+.main-content{
+
+margin-left:0;
+
+}
+
+.dashboard-layout{
+
+flex-direction:column;
+
+}
+
+}

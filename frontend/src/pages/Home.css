@@ -1,0 +1,62 @@
+.home-container {
+  min-height: 100vh;
+}
+
+.hero-section {
+  background: #f8f9fa;
+  padding: 0;
+  min-height: 88vh;
+}
+
+.hero-title {
+  color: #212529;
+  font-size: 3rem;
+}
+
+.hero-text {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.hero-image {
+  max-width: 100%;
+  border-radius: 15px;
+
+}
+
+.feature-card {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card .card-body {
+  padding: 30px 20px;
+}
+
+.feature-card h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    padding: 50px 0;
+  }
+}
